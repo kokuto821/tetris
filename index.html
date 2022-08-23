@@ -11,6 +11,13 @@ table td{
 }
 </style>
 <script type="text/javascript">
+
+function left(){ mykeydown({keycode:37}); }
+function up(){ mykeydown({keycode:38}); }
+function right(){ mykeydown({keycode:39})}
+function down(){ mykeydown({keycode:40})}    
+    
+    
 window.onload = function(){
     var width = 12
     var height = 21
@@ -152,3 +159,22 @@ window.onload = function(){
 </script>
 <div id="info"></div>
 <div id="view"></div>
+<table>
+	<tbody>
+		<tr>
+			<td></td>
+			<td><button onclick="up()">↑</button></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button onclick="left()">←</button></td>
+			<td></td>
+			<td><button onclick="right()">→</button></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td><button onclick="down()">↓</button></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
